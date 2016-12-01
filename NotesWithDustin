@@ -1,0 +1,48 @@
+features
+  -snake case
+
+support
+  -hooks.rb
+
+scenario writing
+  bottom up
+  know what your target is
+
+my_steps.rb
+  pending("something meaningful")
+  pronouns are bad
+
+when testing for the absence of something, also test the presence of something else
+  go beyond the scope of the test
+
+Steps :
+  write feature file
+  cucumber it/run it
+  copy/paste into step file
+
+page class
+  -structure of the page only
+  -want to do all meaningful testing outside of page class 
+
+Use instance variables in step definitions to remember state of a variable IN THE STEP DEFINITIONS FILE
+
+avoid names that indicate the type of field we want
+  page.departure_airpot = "CMH" > page.input_airport("CMH")
+  separation of content and implementation on the page
+
+Know what you're going to do before you go about doing it
+
+DOES THAT HAVE A SMELL
+
+@ ONLY USED IF YOU WANT TO USE IT WITHIN THE CLASS IN OTHER STEP DEFS
+
+avoid using include unless you're worried about a particular substring
+    can't come up with any way for it to pass if it's broken
+
+write down what you think you should be doing first on the step definitions first before worrying about
+implementation
+
+wanna see feedback when a test failed
+
+page object should be the last thing you have to worry about
+  figure out how to do the testing properly first
